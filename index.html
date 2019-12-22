@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+	<title>Matthew Vella</title>
+	<meta name="author" content="Matthew Vella">
+	<meta name="description" content="Home page of Matthew Vella, Pianist, a classical artist from Malta.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="format-detection" content="telephone=no"/>
+	
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Matthew Vella" />
+	<meta property="og:description" content="Home page of Matthew Vella, Pianist, a classical artist from Malta." />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./assets/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Playfair+Display:400i&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./fullpage/fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div class="contact">
+		<label class="contact-box" for="_1">
+				<span>Contact</span>
+		</label>
+		<input id="_1" type="checkbox"> 
+		<div class="contact-expendable">
+			<section>
+				<div class="contact-icon" id="number">
+				</div>
+				<span><a href="tel:+356-7742-4273">+356 7742 4273</a></span>
+			</section>
+			<section>
+				<div class="contact-icon" id="email">
+				</div>
+				<span><a href="mailto:info@vellamatthew.com">info@vellamatthew.com</a></span>
+			</section>
+			<section>
+				<div class="contact-icon" id="location"></div>
+				<span>St. Paul's Bay, Malta</span>
+			</section>
+		</div>
+	</div>
+	<div class="icon-box">
+		<div class="icon" id="facebook">
+			<a href="https://www.facebook.com" target="_blank"></a>
+		</div>
+		<div class="icon" id="instagram">
+			<a href="https://www.instagram.com" target="_blank"></a>
+		</div>
+		<div class="icon" id="twitter">
+			<a href="https://www.twitter.com" target="_blank"></a>
+		</div>
+		<div class="icon" id="youtube">
+			<a href="https://www.youtube.com" target="_blank"></a>
+		</div>
+	</div>
+	<div id="fullpage">
+		<div class="section">
+			<div class="content-paragraph">
+				<h1 class="main-title">Matthew Vella</h1>
+			</div>
+		</div>
+		<div class="section">
+			<div class="content-paragraph">
+				<h1 class="main-title">Coming Soon</h1>
+			</div>
+		</div>
+	</div>
+	<script src="./fullpage/fullpage.min.js"></script>
+	<script type="text/javascript">
+		new fullpage('#fullpage',{
+			anchors: ['', 'ComingSoon']
+		});
+	</script>
+</body>
+</html>
