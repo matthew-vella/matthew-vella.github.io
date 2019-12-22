@@ -281,7 +281,7 @@ body {
 
 @media screen and (max-width: 700px) {
 	.main-title {
-		font-size: 8.5vw;
+		font-size: 10vw;
 	}
 
 	.subtitle {
@@ -295,7 +295,7 @@ body {
 
 @media screen and (max-width: 526px) {
 	.main-title {
-		font-size: 9vw;
+		font-size: 10vw;
 	}
 
 	.subtitle {
@@ -314,7 +314,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 395px) {
 	.contact-box { 
 		position: fixed;
 		left: 50%;
@@ -339,7 +339,7 @@ body {
 	}
 
 	.main-title {
-		font-size: 40px;
+		font-size: 45px;
 	}
 
 	.subtitle {
@@ -353,7 +353,18 @@ body {
 
 @media screen and (max-width: 376px) {
 	.main-title {
-		font-size: 34px;
+		font-size: 45px;
+	}
+
+	.subtitle {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.main-title {
+		font-size: 14vw;
 	}
 
 	.subtitle {
