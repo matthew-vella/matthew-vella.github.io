@@ -1,3 +1,8 @@
+:root {
+	--subtext-color: #494c68;
+	--subtext-hover: #9294a4;
+}
+
 * { 
 	margin: 0;
 	padding: 0;
@@ -89,7 +94,7 @@ body {
 	vertical-align: middle;
 	text-align: center;
 	border-radius: 7px;
-	border: 2px solid rgb(65, 65, 65);
+	border: 2px solid var(--subtext-color);
 	width: 30px;
 	height: 170px;
 	z-index: 1;
@@ -103,16 +108,15 @@ body {
 }
 
 .contact-box:hover > span {
-	color: #A8A8A8;
+	color: var(--subtext-hover);
 }
 
 .contact-box span {
-	
 	height: 100%;
 	text-orientation: upright;
 	writing-mode: vertical-rl;
 	text-transform: uppercase;
-	color: rgb(65, 65, 65);
+	color: var(--subtext-color);
 	font-weight: 700;
 	font-family: "Montserrat", sans-serif;
 }
@@ -128,7 +132,7 @@ body {
 }
 
 .contact-expendable a:hover {
-	color: #A0A0A0;
+	color:  var(--subtext-hover);
 }
 
 .contact-icon {
@@ -156,7 +160,7 @@ body {
 .contact-expendable span {
 	padding-left: 10px;
 	float: left;
-	color: rgb(65, 65, 65);
+	color: var(--subtext-color);
 	font-weight: 700;
 	font-size: 14px;
 	font-family: "Montserrat", sans-serif;
@@ -191,6 +195,7 @@ body {
 }
 
 .icon {
+	cursor: pointer;
 	height: 25%;
 	width: 100%;
 	background-size: contain;
@@ -199,7 +204,7 @@ body {
 }
 
 #facebook {
-	background-image: url(./assets/icons/social-media/facebookbw.png);
+	background-image: url(./assets/icons/social-media/facebookbw.webp);
 }
 
 #facebook:hover {
@@ -207,7 +212,7 @@ body {
 }
 
 #instagram {
-	background-image: url(./assets/icons/social-media/instagrambw.png);
+	background-image: url(./assets/icons/social-media/instagrambw.webp);
 }
 
 #instagram:hover {
@@ -215,7 +220,7 @@ body {
 }
 
 #twitter {
-	background-image: url(./assets/icons/social-media/twitterbw.png);
+	background-image: url(./assets/icons/social-media/twitterbw.webp);
 }
 
 #twitter:hover {
@@ -223,7 +228,7 @@ body {
 }
 
 #youtube {
-	background-image: url(./assets/icons/social-media/youtubebw.png);	
+	background-image: url(./assets/icons/social-media/youtubebw.webp);	
 }
 
 #youtube:hover {
