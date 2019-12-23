@@ -276,6 +276,11 @@ body {
 		width: 30px;
 		height: 100%;
 	}
+
+	iframe {
+		height: 35vw;
+		width: 62.2222222222222222222222222222vw;
+	}
 }
 
 
