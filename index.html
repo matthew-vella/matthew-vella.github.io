@@ -27,26 +27,10 @@
 </head>
 <body>
 	<div class="contact">
-		<label class="contact-box" for="_1">
-				<span>Contact</span>
-		</label>
-		<input id="_1" type="checkbox"> 
-		<div class="contact-expendable">
-			<section>
-				<div class="contact-icon" id="number">
-				</div>
-				<span><a href="tel:+356-7742-4273">+356 7742 4273</a></span>
-			</section>
-			<section>
-				<div class="contact-icon" id="email">
-				</div>
-				<span><a href="mailto:info@vellamatthew.com">info@vellamatthew.com</a></span>
-			</section>
-			<section>
-				<div class="contact-icon" id="location"></div>
-				<span>St. Paul's Bay, Malta</span>
-			</section>
+		<div class="contact-box" for="_1">
+			<a href="#about"><span>Contact</span></a>
 		</div>
+		
 	</div>
 	<div class="icon-box">
 		<div class="icon" id="facebook">
@@ -70,15 +54,47 @@
 		</div>
 		<div class="section">
 			<div class="content-paragraph">
-				<iframe style="border: 1px solid rgba(200, 200, 200, 0.5);"width="700" height="393.75" src="https://www.youtube.com/embed/VRCRzKxvc30?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe style="border: 1px solid rgba(200, 200, 200, 0.5);"width="675.5555555555556" height="380" src="https://www.youtube.com/embed/VRCRzKxvc30?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="section" id="contact">
+			<div class="contact-wrapper">
+				<div class="half" id="about-half">
+					<h1>About</h1>
+					<section class="about-text">
+						<p>Matthew Vella is a student and pianist based in Malta. He started piano lessons at the age of 5 and is currently studying to attain his diploma in <i>Music Theory</i> and <i>Piano Forte</i>. In 2016 he won the <i>Maltese Islands Festival Music Award</i> for first place in Modern/Pop/Folk Piano.</p>
+						<br>
+					</section>
+				</div>
+				<div class="half" id="contact-half">
+					<h1>Contact</h1>
+					<div class="contact-info">
+						<section class="contact-method" >
+							<div class="contact-icon" id="number"></div><span><a href="tel:+356-7742-4273">+356 7742 4273</a></span>
+						</section>
+						<section class="contact-method">
+							<div class="contact-icon" id="email"></div><span><a href="mailto:info@vellamatthew.com">info@vellamatthew.com</a></span>
+						</section>
+						<section class="contact-method">
+							<div class="contact-icon" id="location"></div><span>St Paul's Bay, Malta</span>
+					</section>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<script src="./fullpage/fullpage.min.js"></script>
 	<script type="text/javascript">
 		new fullpage('#fullpage',{
-			anchors: ['', 'videos']
+			anchors: [, 'videos', 'about'],
 		});
+		$(function(){
+		  $('#fullpage').fullpage({
+		    sectionSelector: '.page',
+		    scrollOverflow: true
+		  });
+		});
+
 	</script>
 </body>
 </html>

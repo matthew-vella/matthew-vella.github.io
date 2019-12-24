@@ -1,4 +1,5 @@
 :root {
+	--subtext-color: rgb(65, 65, 65);
 	--subtext-color: #494c68;
 	--subtext-hover: #9294a4;
 }
@@ -14,7 +15,7 @@ a {
 }
 
 a:hover {
-	color: black;
+	color: var(--subtext-hover);
 }
 
 html {
@@ -35,12 +36,12 @@ body {
 	padding: 0;
 }
 
-::selection {
-	background: rgba(200, 200, 200, 0.5);	/* WebKit/Blink Browsers */
+::selection {	
+	background: rgba(73, 76, 104, 0.5);	/* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-	background: rgba(200, 200, 200, 0.5);	/* Gecko Browsers */
+	background: rgba(73, 76, 104, 0.5);	/* Gecko Browsers */
 
 }
 
@@ -121,63 +122,6 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
-.contact-expendable {
-	display: none;
-	margin-left: 60px;
-	top: calc(50vh - (170px / 2));
-	z-index: 1;
-	position: fixed;
-	height: 170px;
-	width: auto;
-}
-
-.contact-expendable a:hover {
-	color:  var(--subtext-hover);
-}
-
-.contact-icon {
-	margin-left: 10px;
-	float: left;
-	height: 20px;
-	width: 20px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center center;
-}
-
-#number {
-	background-image: url(./assets/icons/contact/phone.webp);
-}
-
-#email {
-	background-image: url(./assets/icons/contact/email.webp);
-}
-
-#location {
-	background-image: url(./assets/icons/contact/location.webp);
-}
-
-.contact-expendable span {
-	padding-left: 10px;
-	float: left;
-	color: var(--subtext-color);
-	font-weight: 700;
-	font-size: 14px;
-	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-}
-
-.contact-expendable section {
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.contact-expendable section:after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
 .icon-box {
 	width: 30px;
 	height:170px;
@@ -204,7 +148,7 @@ body {
 }
 
 #facebook {
-	background-image: url(./assets/icons/social-media/facebookbw.webp);
+	background-image: url(./assets/icons/social-media/facebookaccent.webp);
 }
 
 #facebook:hover {
@@ -212,7 +156,7 @@ body {
 }
 
 #instagram {
-	background-image: url(./assets/icons/social-media/instagrambw.webp);
+	background-image: url(./assets/icons/social-media/instagramaccent.webp);
 }
 
 #instagram:hover {
@@ -220,7 +164,7 @@ body {
 }
 
 #twitter {
-	background-image: url(./assets/icons/social-media/twitterbw.webp);
+	background-image: url(./assets/icons/social-media/twitteraccent.webp);
 }
 
 #twitter:hover {
@@ -228,11 +172,122 @@ body {
 }
 
 #youtube {
-	background-image: url(./assets/icons/social-media/youtubebw.webp);	
+	background-image: url(./assets/icons/social-media/youtubeaccent.webp);	
 }
 
 #youtube:hover {
 	background-image: url(./assets/icons/social-media/youtube.png);	
+}
+
+#contact {
+	background-image: url(./assets/background-images/3darkened20blurred15.webp);
+	text-align: center;
+}
+
+.contact-wrapper {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.1);
+	height: 80vh;
+	width: 90vw;
+}
+
+.half {
+	display: inline-block;
+	width: 90vw;
+	min-height: 35vh;
+	height: auto;
+	max-height: 50vh;
+	padding-left: 20px;
+	padding-right: 20px;
+	overflow: auto;
+}
+
+#contact h1 {
+	text-align: left;
+	padding-top: 30px;
+	padding-left: 60px;
+	font-weight: 400;
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+	color: lightgrey;
+}
+
+.about-text {
+	padding-top: 40px;
+	padding-left: 60px;
+}
+
+.half p {
+	word-wrap: break-all;
+	max-width: 960px;
+	font-family: 'Montserrat', sans-serif;
+	color: lightgrey;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: left;
+}
+
+.contact-method {
+	height: 50px;
+	text-align: left;
+	padding-left: 60px;
+}
+
+.contact-method span {
+	height: 50px;
+	padding-left: 20px;
+	float: left;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	color: lightgrey;
+	line-height: 50px;
+}
+
+.contact-icon {
+	float: left;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 75%;
+	height: 50px;
+	width: 50px;
+}
+
+.contact-info {
+	padding-top: 40px;
+}
+
+#number {
+	background-image: url(./assets/icons/contact/phone.webp);
+}
+
+#email {
+	background-image: url(./assets/icons/contact/email.webp);
+}
+
+#location {
+	background-image: url(./assets/icons/contact/location.webp);
+	background-size: 60%;
+}
+
+.contact-method:after {
+	content: "";
+	clear: both;
+}
+
+@media screen and (max-width: 960px) {
+	#contact h1 {
+		padding-left: 5vw;
+	}
+
+	.about-text {
+		padding-left: 5vw;
+	}
+
+	.contact-method {
+		padding-left: 5vw;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -247,19 +302,13 @@ body {
 
 	.contact-box span {
 		display: table-cell;
+		height: 30px;
+		align-items: center;
 		vertical-align: middle;
 		padding-left: 10px;
 		padding-right: 10px;
 		letter-spacing: 7px;
 		writing-mode: horizontal-tb;
-	}
-
-	.contact-expendable {
-		margin: 0;
-		top: 0;
-		height: auto;
-		margin-top: 55px;
-		background-color: transparent;
 	}
 
 	.icon-box {
@@ -284,7 +333,7 @@ body {
 
 	iframe {
 		height: 35vw;
-		width: 62.2222222222222222222222222222vw;
+		width: 62.22vw;
 	}
 }
 
@@ -333,13 +382,7 @@ body {
 		margin-top: 50px; 
 	}
 
-	.contact-expendable {
-		min-width: 256px;
-		margin: 0;
-		margin-top: 90px;
-		left: 50%;
-		transform: translate(-50%, 0);
-	}
+	
 
 	.icon-box {
 		position: fixed;
@@ -381,16 +424,4 @@ body {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-}
-
-input {
-  display: none; /* hide the checkboxes */
-}
-
-.contact-box + input + .contact-expendable {
-  display: none;
-}
-
-input:checked + .contact-expendable {
-  display: block;
 }
