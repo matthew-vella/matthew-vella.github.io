@@ -218,6 +218,7 @@ body {
 }
 
 .half p {
+	padding-right: 30px;
 	word-wrap: break-all;
 	max-width: 960px;
 	font-family: 'Montserrat', sans-serif;
@@ -276,17 +277,17 @@ body {
 	clear: both;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1025px) {
 	#contact h1 {
-		padding-left: 5vw;
+		padding-left: 3vw;
 	}
 
 	.about-text {
-		padding-left: 5vw;
+		padding-left: 3vw;
 	}
 
 	.contact-method {
-		padding-left: 5vw;
+		padding-left: 3vw;
 	}
 }
 
