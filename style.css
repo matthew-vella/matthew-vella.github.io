@@ -366,6 +366,18 @@ body {
 	.contact-method {
 		padding-left: 3vw;
 	}
+
+	.half h1 {
+		font-size: 31px;
+	}
+
+	.half p {
+		font-size: 15px;
+	}
+
+	.contact-method span {
+		font-size: 15px;
+	}
 }
 
 @media screen and (max-width: 800px) {
@@ -429,17 +441,7 @@ body {
 		font-size: 2vw;
 	}
 
-	.half h1 {
-		font-size: 31px;
-	}
-
-	.half p {
-		font-size: 15px;
-	}
-
-	.contact-method span {
-		font-size: 15px;
-	}
+	
 }
 
 @media screen and (max-width: 526px) {
