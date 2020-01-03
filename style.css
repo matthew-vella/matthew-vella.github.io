@@ -416,7 +416,7 @@ body {
 }
 
 
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 700px) {
 	.main-title {
 		font-size: 10vw;
 	}
