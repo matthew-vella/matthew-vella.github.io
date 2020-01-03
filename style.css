@@ -7,6 +7,7 @@
 * { 
 	margin: 0;
 	padding: 0;
+	-webkit-text-size-adjust: none;
 }
 
 a {
@@ -440,8 +441,6 @@ body {
 	.main-title.error-message {
 		font-size: 2vw;
 	}
-
-	
 }
 
 @media screen and (max-width: 526px) {
