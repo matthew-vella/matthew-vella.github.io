@@ -32,6 +32,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100, 400,700|Playfair+Display:400i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./style.css"/>
 	<link rel="stylesheet" href="./fullpage/fullpage.min.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147056657-2"></script>
@@ -46,11 +48,11 @@
 </head>
 <body>
 	<div class="contact">
-		<div class="contact-box">
+		<div class="contact-box" data-aos="fade-right">
 			<a href="#about"><span>Contact</span></a>
 		</div>
 	</div>
-	<div class="icon-box">
+	<div class="icon-box" data-aos="fade-left">
 		<div class="icon" id="facebook">
 			<a href="https://fb.me/vellamatthewmusic" target="_blank"></a>
 		</div>
@@ -113,7 +115,17 @@
 		    scrollOverflow: true,
 		  });
 		});
-
+	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		window.addEventListener('load', AOS.refresh)
+	    AOS.init({
+  			disable: function() {
+    			var maxWidth = 800;
+    			return window.innerWidth < maxWidth;
+    			}
+    		}
+    	);
 	</script>
 </body>
 </html>
