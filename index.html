@@ -57,12 +57,20 @@
         <div class=content-paragraph>
             <h1 class=main-title>Matthew Vella</h1></div>
     </div>
-    <div class=section>
-        <div class=content-paragraph>
-            <div class=vid-box>
-                <div class="img-thumbnail yt-lazyload" data-id=VRCRzKxvc30 data-logo=0 data-random=""></div>
-            </div>
-        </div>
+    <div class=section style="text-align: center;">
+	    <h1 class=main-title id="latest-tracks">Latest Videos</h1>
+    	<div class="contact-wrapper">
+	        <div class=content-paragraph id="video-section">
+		        <div class="video-gallery">
+		            <div class=vid-box>
+		                <div class="img-thumbnail yt-lazyload" data-id=hRSZFiqWa-g data-logo=0 data-random=""></div>
+		            </div>
+		            <div class=vid-box>
+		                <div class="img-thumbnail yt-lazyload" data-id=VRCRzKxvc30 data-logo=0 data-random=""></div>
+		            </div>
+		        </div>
+	        </div>
+	    </div>
     </div>
     <div class=section id=contact>
         <div class=contact-wrapper>
@@ -86,7 +94,7 @@
             </div>
         </div>
         <div class="copyright-notice">
-			<span class="copyright">Copyright 2020 | vellamatthew.com</span>
+			<span class="copyright">Copyright <span id="year"></span> | vellamatthew.com</span>
 		</div>
     </div>
 </div>
@@ -110,4 +118,11 @@
             return window.innerWidth < 800
         }
     })
+</script>
+<script>
+	function getYear() {
+		var d = new Date();
+		return d.getFullYear();
+	}
+	document.getElementById("year").innerHTML = getYear();
 </script>
